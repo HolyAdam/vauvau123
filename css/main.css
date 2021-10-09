@@ -18,12 +18,15 @@ body {
 .header {
 	display: flex;
 	align-items: center;
-	padding: 30px 0;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 .container {
 	max-width: 1170px;
 	margin: auto;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .logo {
