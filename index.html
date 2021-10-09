@@ -8,43 +8,141 @@
 </head>
 <body>
 	
-	<header class="header container">
-		<a class="logo" href="/">
-			<img src="img/logo.svg" alt="Logo">
-		</a>
-		<nav class="nav">
-			<ul class="nav-list">
-				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
-						Главная
-					</a>
-				</li>
-				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
-						Фильмы
-					</a>
-				</li>
-				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
-						Кинотеатры
-					</a>
-				</li>
-				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
-						События
-					</a>
-				</li>
-				<li class="nav-list__item">
-					<a href="#" class="nav-list__link">
-						Поддержка
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<div class="user">
-			<span>Привет, Пользователь</span>
-			<img class="ava" src="img/milalol.png" alt="Avatar">
+	<header class="header">
+		<div class="navbar container">
+			<a class="logo" href="/">
+				<img src="img/logo.svg" alt="Logo">
+			</a>
+			<nav class="nav">
+				<ul class="nav-list">
+					<li class="nav-list__item">
+						<a href="#" class="nav-list__link">
+							Главная
+						</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#" class="nav-list__link">
+							Фильмы
+						</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#" class="nav-list__link">
+							Кинотеатры
+						</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#" class="nav-list__link">
+							События
+						</a>
+					</li>
+					<li class="nav-list__item">
+						<a href="#" class="nav-list__link">
+							Поддержка
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user">
+				<span>Привет, Пользователь</span>
+				<img class="ava" src="img/milalol.png" alt="Avatar">
+			</div>
+		</div> <!-- navbar end -->
+		<div class="film container">
+			<div class="film-info">
+				<small class="film-info__subtitle">
+					Avengers: Infinity War
+				</small>
+				<h1 class="film-info__title">
+					Мстители: война бесконечности
+				</h1>
+				<p class="film-info__descr">
+					Пока Мстители и их союзники продолжают защищать мир от различных опасностей, с которыми не смог бы справиться один супергерой, новая угроза возникает из космоса: Танос. Межгалактический тиран преследует цель собрать все шесть Камней Бесконечности - артефакты невероятной силы, с помощью которых можно менять реальность по своему желанию. Всё, с чем Мстители сталкивались ранее, вело к этому моменту – судьба Земли никогда ещё не была столь неопределённой.
+
+
+				</p>
+				<div class="film-rat">
+					<div class="film-time">
+						<img class="film-img" src="img/clock.svg" alt="Clock">
+						<span class="time-counter">
+							240 мин.
+						</span>
+					</div>
+					<div class="rat">
+						<img class="imdb-img" src="img/imdb.png" alt="Imdb">
+						<span class="rating-counter">
+							<strong class="rat-strong">9.2</strong> / 10
+						</span>
+					</div>
+				</div>
+			</div>
+			<a class="film-player" href="#">
+				<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="50" cy="50" r="50" fill="white"/>
+				<g clip-path="url(#clip0)">
+				<path d="M43.0758 30.0033C39.3071 27.8416 36.2518 29.6125 36.2518 33.9556V66.0059C36.2518 70.3533 39.3071 72.1219 43.0758 69.9623L71.0893 53.8967C74.8592 51.7342 74.8592 48.2306 71.0893 46.0686L43.0758 30.0033Z" fill="#F20D01"/>
+				</g>
+				<defs>
+				<clipPath id="clip0">
+				<rect width="41.8013" height="41.8013" fill="white" transform="translate(34.1837 29.0816)"/>
+				</clipPath>
+				</defs>
+				</svg>
+
+			</a>
 		</div>
+
+		<div class="container">
+			<div class="session">
+				<div class="session-date">
+					<div class="session-label session-label--date">
+						Дата
+					</div>
+					<div class="session-date__blocks">
+						<div class="session-date__block">
+							<div class="session-date__month">апр</div>
+							<div class="session-date__day">27</div>
+							<div class="session-date__typeday">пт</div>
+						</div>
+						<div class="session-date__block">
+							<div class="session-date__month">апр</div>
+							<div class="session-date__day">28</div>
+							<div class="session-date__typeday">сб</div>
+						</div>
+						<div class="session-date__block">
+							<div class="session-date__month">апр</div>
+							<div class="session-date__day">29</div>
+							<div class="session-date__typeday">вс</div>
+						</div>
+						<div class="session-date__block">
+							<div class="session-date__month">апр</div>
+							<div class="session-date__day">30</div>
+							<div class="session-date__typeday">пн</div>
+						</div>
+					</div>
+				</div>
+				<div class="session-cinema">
+					<div class="session-label session-label--cinema">
+						Кинотеатр
+					</div>
+					<select class="select select--cinema" name="cinema">
+						<option value="Octomber, 28">Октябрь, ул. Калужская 28</option>
+						<option value="IMAX, 28">IMAX, ул. Ленина 12</option>
+						<option value="Afimoll, 11">Афимолл, ул. Арбатская 11</option>
+					</select>
+				</div>
+				<div class="session-time">
+					<div class="session-label session-label--time">
+						Время
+					</div>
+					<select class="select select--time" name="time">
+						<option value="12:00">12:00</option>
+						<option value="15:00">15:00</option>
+						<option value="18:00">18:00</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
 	</header>
 
 </body>
