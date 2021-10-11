@@ -11,9 +11,17 @@ body {
 
 .header {
 	background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url('../img/bg.jpg') center/cover no-repeat;
-	min-height: 100vh;
+	padding-bottom: 60px;
 }
 
+.m-menu {
+	display: none;
+	background: transparent;
+	border: none;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
 
 .nav-list {
 	padding: 0;
@@ -33,6 +41,7 @@ body {
 	margin: auto;
 	padding-left: 15px;
 	padding-right: 15px;
+	width: 90%;
 }
 
 .logo {
@@ -133,7 +142,6 @@ body {
 	padding-bottom: 63px;
 	border-top: 1px solid rgba(255,255,255,0.5);
 	border-bottom: 1px solid rgba(255,255,255,0.5);
-	margin-bottom: 50px;
 	display: flex;
 	justify-content: space-between;
 }
@@ -229,10 +237,6 @@ body {
 	margin-bottom: 40px;
 }
 
-.scheme path {
-	fill: rgba(255,255,255,0.2);
-}
-
 .scheme path:not(.light) {
 	fill: rgba(255, 255, 255, 0.2)
 }
@@ -252,6 +256,7 @@ body {
 	align-items: center;
 	border-top: 1px solid rgba(255,255,255,0.5);
 	max-width: 1024px;
+	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 25px;
@@ -309,3 +314,122 @@ body {
 	background-color: #FE8E05;
 }
 
+.scheme {
+	max-width: 1170px;
+	overflow-x: auto;
+}
+
+
+@media (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.select--cinema {
+		width: 100%;
+	}
+
+
+}
+
+
+@media (max-width: 992px) {
+	.container {
+		max-width: 750px;
+	}
+
+	.session {
+		flex-wrap: wrap;
+	}
+
+	.session-date {
+		flex-basis: 70%;
+		margin-bottom: 25px;
+		order: 1;
+
+	}
+
+	.session-time {
+		order: 2;
+
+	}
+
+	.session-cinema {
+		order: 3;
+	}
+}
+
+
+@media (max-width: 768px) {
+
+	.price-all {
+		font-size: 30px;
+		line-height: 34px;
+	}
+
+	.btn {
+		padding: 12px 25px;
+		font-size: 16px;
+	}
+
+	.container {
+		max-width: 560px
+	}
+	.nav-list {
+		display: none;
+		position: absolute;
+		top: 40px;
+		left: 0px;
+		flex-direction: column;
+		background-color: #621402;
+		padding: 10px;
+		text-align: center;	
+		align-items: center;
+		border-radius: 10px;
+		z-index: 4;
+	}
+
+	.nav-list__item {
+		margin-right: 0;
+	}
+	.nav-list__item:not(:last-child) {
+		margin-bottom: 5px;
+	}
+	.nav {
+		position: relative;
+	}
+	.m-menu {
+		display: block;
+	}
+	.logo {
+		margin-right: 25px;
+	}
+
+	.film {
+		flex-direction: column;
+	}
+
+	.film-player {
+		margin-left: 0;
+		margin-right: auto;
+		margin-top: 25px;
+	}
+
+	.session-date__blocks {
+		flex-direction: column;
+	}
+
+	.session-date__block {
+		margin-bottom: 10px;
+	}
+
+	.session-time {
+		margin-bottom: 25px;
+	}
+
+	.infos {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+}

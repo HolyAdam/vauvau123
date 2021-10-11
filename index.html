@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cinema</title>
+	<link
+	      rel="stylesheet"
+	      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+	    />
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -14,6 +18,13 @@
 				<img src="img/logo.svg" alt="Logo">
 			</a>
 			<nav class="nav">
+				<button class="m-menu">
+					<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<line y1="0.5" x2="20" y2="0.5" stroke="white"/>
+					<line y1="5.5" x2="20" y2="5.5" stroke="white"/>
+					<line y1="10.5" x2="20" y2="10.5" stroke="white"/>
+					</svg>
+				</button>
 				<ul class="nav-list">
 					<li class="nav-list__item">
 						<a href="#" class="nav-list__link">
@@ -75,7 +86,8 @@
 					</div>
 				</div>
 			</div>
-			<a class="film-player" href="#">
+			<a class="film-player" href="#" data-fancybox="video-gallery" data-src="https://www.youtube.com/watch?v=z2X2HaTvkl8">
+
 				<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<circle cx="50" cy="50" r="50" fill="white"/>
 				<g clip-path="url(#clip0)">
@@ -147,7 +159,7 @@
 
 	<div class="container">
 		<div class="scheme">
-			<svg id="schemeSvg" width="1170" height="600" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg id="schemeSvg" viewBox="0 0 1170 600" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<path class="light" d="M128 115L201.04 48H968.96L1042 115H128Z" fill="url(#paint0_linear)"/>
 			<line x1="76" y1="43" x2="1094" y2="43" stroke="black" stroke-opacity="0.39" stroke-width="10"/>
 			<path d="M140.5 135C137.186 135 134.5 137.686 134.5 141V154C134.5 157.314 137.186 160 140.5 160H156.5C159.814 160 162.5 157.314 162.5 154V141C162.5 137.686 159.814 135 156.5 135H140.5Z" y/>
@@ -331,8 +343,10 @@
 			<path class="booked" d="M381.312 618C377.999 618 375.312 620.686 375.312 624V637C375.312 640.314 377.999 643 381.312 643H397.312C400.626 643 403.312 640.314 403.312 637V624C403.312 620.686 400.626 618 397.312 618H381.312Z"/>
 			<defs>
 			<linearGradient id="paint0_linear" x1="585" y1="48" x2="585" y2="115" gradientUnits="userSpaceOnUse">
-			<stop stop-color="#C4C4C4" stop-opacity="0.21"/>
-			<stop offset="1" stop-color="#C4C4C4" stop-opacity="0"/>
+
+			<stop offset="0%" stop-color="white" stop-opacity="0.04"/>
+			<stop offset="100%" stop-color="white" stop-opacity="0.25"/>
+
 			</linearGradient>
 			</defs>
 			</svg>
@@ -386,6 +400,7 @@
 		</div>
 	</div>
 
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
 <script src="js/entry.js"></script>
 </body>
